@@ -1417,9 +1417,10 @@ nav.pagination .current a {
   padding-left: 20px;
 }
 /*# sourceMappingURL=css/st/dev.css.map */.header-nav {
-  background: #8a2be2;
+  background: #4C1481;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 0; }
   .header-nav #contact-link {
     display: flex;
     align-items: center;
@@ -1432,19 +1433,19 @@ nav.pagination .current a {
       margin: auto 10px auto 15px; }
     .header-nav #contact-link span {
       font-size: 12px;
-      color: #C8A2EC;
+      color: #A087B9;
       margin: 0 5px 0 0; }
     .header-nav #contact-link .contact-label {
       display: flex; }
     .header-nav #contact-link a {
-      color: #D2A8FA;
+      color: #A489BC;
       font-size: 12px;
       font-weight: bold;
       text-decoration: none; }
       .header-nav #contact-link a:hover {
         text-decoration: underline; }
       .header-nav #contact-link a span {
-        color: #D2A8FA; }
+        color: #A489BC; }
   .header-nav .user-info {
     align-self: flex-end;
     display: flex;
@@ -1461,6 +1462,38 @@ nav.pagination .current a {
     .header-nav .user-info .separator {
       margin: auto 10px auto 15px;
       color: #E5E8E8; }
+
+.header-principal {
+  justify-content: space-between;
+  padding: 10px 0;
+  display: flex;
+  align-items: center; }
+  .header-principal .logo img {
+    width: 125px; }
+
+.header-top {
+  background: #8a2be2;
+  display: flex;
+  align-items: center;
+  margin: 0; }
+  .header-top .menu {
+    margin-left: -10px; }
+    .header-top .menu ul {
+      display: flex;
+      justify-content: flex-start; }
+      .header-top .menu ul li {
+        padding: 5px; }
+        .header-top .menu ul li a {
+          background: transparent;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 100;
+          text-transform: uppercase; }
+        .header-top .menu ul li:not(:first-child) {
+          border: none; }
+        .header-top .menu ul li:hover {
+          border-bottom: 5px solid #ffcb00;
+          padding: 5px 5px 0; }
 
 @media (max-width: 768px) {
   .header-nav #contact-link .contact-label {
