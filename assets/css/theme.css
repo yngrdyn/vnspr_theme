@@ -1432,19 +1432,35 @@ nav.pagination .current a {
       margin: auto 10px auto 15px; }
     .header-nav #contact-link span {
       font-size: 12px;
-      color: #E5E8E8;
+      color: #C8A2EC;
       margin: 0 5px 0 0; }
     .header-nav #contact-link .contact-label {
       display: flex; }
     .header-nav #contact-link a {
-      color: #f2f2f2;
+      color: #D2A8FA;
       font-size: 12px;
       font-weight: bold;
       text-decoration: none; }
       .header-nav #contact-link a:hover {
         text-decoration: underline; }
+      .header-nav #contact-link a span {
+        color: #D2A8FA; }
   .header-nav .user-info {
-    align-self: flex-end; }
+    align-self: flex-end;
+    display: flex;
+    align-items: center; }
+    .header-nav .user-info a {
+      color: #f2f2f2;
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      background: transparent;
+      border: none; }
+      .header-nav .user-info a:hover {
+        text-decoration: underline; }
+    .header-nav .user-info .separator {
+      margin: auto 10px auto 15px;
+      color: #E5E8E8; }
 
 @media (max-width: 768px) {
   .header-nav #contact-link .contact-label {
