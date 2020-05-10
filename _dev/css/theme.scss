@@ -1,6 +1,7 @@
 @import './variables';
 @import './header/header.scss';
 @import './ps_imageslider/slider.scss';
+@import './categoryblock/categoryblock.scss';
 
 body {
   background: $body-background-color;
@@ -18,4 +19,9 @@ body {
   ol {
     margin-top: 22px;
   }
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
 }

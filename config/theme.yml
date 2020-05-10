@@ -34,8 +34,6 @@ global_settings:
         title: displayFooterBefore
         description: Add a widget area above the footer
     modules_to_hook:
-      displayCategories:
-        - ps_mainmenu
       displayNav:
         - ps_contactinfo
         - ps_languageselector
@@ -48,7 +46,7 @@ global_settings:
         - ps_mainmenu
       displayHome:
         - ps_imageslider
-        - ps_categoryproducts
+        - ps_categoryblock
         - ps_featuredproducts
         - ps_banner
       displayFooter:
