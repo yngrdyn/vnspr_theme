@@ -1,0 +1,14 @@
+.homeslider-container {
+    .homeslider_nav {
+        opacity: 0.5;
+        background: transparent url(/themes/vnspr_theme/assets/img/arrows.gif) no-repeat left top;
+    
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.homeslider-container img {
+    height: 340px;
+}

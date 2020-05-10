@@ -34,15 +34,21 @@ global_settings:
         title: displayFooterBefore
         description: Add a widget area above the footer
     modules_to_hook:
+      displayCategories:
+        - ps_mainmenu
       displayNav:
-        - ps_shoppingcart
+        - ps_contactinfo
         - ps_languageselector
         - ps_currencyselector
         - ps_customersignin
+      displayNav1:
+        - ps_searchbar
+        - ps_shoppingcart
       displayTop:
         - ps_mainmenu
       displayHome:
         - ps_imageslider
+        - ps_categoryproducts
         - ps_featuredproducts
         - ps_banner
       displayFooter:
@@ -68,7 +74,7 @@ global_settings:
     home_default:
       width: 250
       height: 250
-      scope: [products]
+      scope: [products, categories]
     category_default:
       width: 960
       height: 350

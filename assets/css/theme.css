@@ -1416,7 +1416,11 @@ nav.pagination .current a {
 #search_filters .active_filters ul {
   padding-left: 20px;
 }
-/*# sourceMappingURL=css/st/dev.css.map */.header-nav {
+/*# sourceMappingURL=css/st/dev.css.map */#header {
+  display: flex;
+  flex-direction: column; }
+
+.header-nav {
   background: #4C1481;
   display: flex;
   align-items: center;
@@ -1548,8 +1552,22 @@ nav.pagination .current a {
   #shopping_cart .blockcart {
     margin-right: 100px; } }
 
+.homeslider-container .homeslider_nav {
+  opacity: 0.5;
+  background: transparent url(/themes/vnspr_theme/assets/img/arrows.gif) no-repeat left top; }
+  .homeslider-container .homeslider_nav:hover {
+    opacity: 0.7; }
+
+.homeslider-container img {
+  height: 340px; }
+
 body {
   background: #fefefe; }
 
 .banner img {
   width: 100%; }
+
+#wrapper {
+  margin-top: -22px; }
+  #wrapper ol {
+    margin-top: 22px; }

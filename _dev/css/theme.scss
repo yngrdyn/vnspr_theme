@@ -1,5 +1,6 @@
 @import './variables';
 @import './header/header.scss';
+@import './ps_imageslider/slider.scss';
 
 body {
   background: $body-background-color;
@@ -8,5 +9,13 @@ body {
 .banner {
   img {
     width: 100%;
+  }
+}
+
+#wrapper {
+  margin-top: -22px;
+
+  ol {
+    margin-top: 22px;
   }
 }

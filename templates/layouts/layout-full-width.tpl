@@ -24,6 +24,10 @@
  *}
 {extends file='layouts/layout-both-columns.tpl'}
 
+{block name='breadcrumb'}
+  
+{/block}
+
 {block name='left_column'}{/block}
 {block name='right_column'}{/block}
 
