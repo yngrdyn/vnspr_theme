@@ -172,19 +172,31 @@
         }
     }
 
-    .header {
-        background: url("/themes/vnspr_theme/assets/img/shopping-cart.svg") no-repeat;
-        background-size: 40px 40px;
+    .header, .empty-header {
         width: 42px;
         height: 39px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #b4ff00;
         padding-top: 0px;
         padding-left: 15px;
         font-size: 14px;
         border: none;
+    }
+
+    .header, .empty-header {
+        background: url("/themes/vnspr_theme/assets/img/shopping-cart.svg") no-repeat;
+        background-size: 40px 40px;
+        color: #b4ff00;
+    }
+
+    .empty-header {
+        background: url("/themes/vnspr_theme/assets/img/empty-shopping-cart.svg") no-repeat;
+        background-size: 40px 40px;
+        color: #4C1481;
+        padding-left: 6px;
+        padding-bottom: 5px;
+        font-weight: bold;
     }
 }
 
