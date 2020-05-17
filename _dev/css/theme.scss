@@ -1,7 +1,9 @@
 @import './variables';
-@import './header/header.scss';
-@import './ps_imageslider/slider.scss';
 @import './categoryblock/categoryblock.scss';
+@import './header/header.scss';
+@import './products/products.scss';
+@import './ps_featuredproducts/featured.scss';
+@import './ps_imageslider/slider.scss';
 
 body {
   background: $body-background-color;
