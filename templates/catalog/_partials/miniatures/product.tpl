@@ -19,28 +19,7 @@
       <div class="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
     {/block}
 
-    {block name='product_list_actions'}
-      <div class="product-list-actions">
-        {if $product.add_to_cart_url}
-            <a
-              class = "add-to-cart"
-              href  = "{$product.add_to_cart_url}"
-              rel   = "nofollow"
-              data-id-product="{$product.id_product}"
-              data-id-product-attribute="{$product.id_product_attribute}"
-              data-link-action="add-to-cart"
-            >{l s='Add to cart' d='Shop.Theme.Actions'}</a>
-        {/if}
-        {hook h='displayProductListFunctionalButtons' product=$product}
-      </div>
-    {/block}
-
-    {block name='product_quick_view'}
-    {/block}
-
-    {block name='product_variants'}
-      {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-    {/block}
+    {hook h='displayProductListReviews' product=$product}
 
     {block name='product_price_and_shipping'}
       {if $product.show_price}
@@ -67,22 +46,27 @@
       {/if}
     {/block}
 
-    {block name='product_flags'}
-      <ul class="product-flags">
-        {foreach from=$product.flags item=flag}
-          <li class="{$flag.type}">{$flag.label}</li>
-        {/foreach}
-      </ul>
+    {block name='product_list_actions'}
+      <div class="product-list-actions">
+        <form action="{$urls.pages.cart}" method="post" class="add-to-cart-or-refresh">
+            <input type="hidden" name="token" value="{$static_token}">
+            <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
+            <input type="hidden" name="qty" value="1">
+            {if Context::getContext()->cart->containsProduct($product.id)}
+               <a class="remove-from-cart xsmall" rel="nofollow" href="{Context::getContext()->link->getRemoveFromCartURL($product.id,$product.id_product_attribute)}" data-link-action="remove-from-cart">Remove</a>
+            {else}
+              {if $product.add_to_cart_url}
+                  <button data-button-action="add-to-cart" type="submit"
+                    class="add-to-cart">
+                    <span class="add-to-cart-icon"></span>
+                    <span>{l s='Buy' d='Shop.Theme.Actions'}</span>
+                  </button>
+              {/if}
+            {/if}
+          </form>
+        {hook h='displayProductListFunctionalButtons' product=$product}
+      </div>
     {/block}
-
-    {block name='product_availability'}
-      {if $product.show_availability}
-        {* availability may take the values "available" or "unavailable" *}
-        <span class='product-availability {$product.availability}'>{$product.availability_message}</span>
-      {/if}
-    {/block}
-
-    {hook h='displayProductListReviews' product=$product}
 
   </article>
 {/block}

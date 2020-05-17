@@ -1,0 +1,9 @@
+.featured-products {
+    display: flex;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border: none;
+}
