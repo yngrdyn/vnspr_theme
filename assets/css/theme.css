@@ -1516,15 +1516,6 @@ nav.pagination .current a {
   .header-principal > * {
     margin: 0 10px; }
   .header-principal .logo img {
-<<<<<<< HEAD
-    height: 50px; }
-  .header-principal #shopping_cart {
-    align-items: center;
-    display: flex;
-    height: 50px; }
-  .header-principal #search_widget > form input {
-    height: 50px; }
-=======
     height: 35px; }
   .header-principal #shopping_cart {
     align-items: center;
@@ -1532,7 +1523,6 @@ nav.pagination .current a {
     height: 35px; }
   .header-principal #search_widget > form input {
     height: 35px; }
->>>>>>> 6b20e16839dcb49c4240cf71803e122b179b5ce5
 
 .header-top {
   background: #8a2be2;
