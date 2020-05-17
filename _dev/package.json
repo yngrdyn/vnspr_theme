@@ -29,5 +29,8 @@
         "stylus": "^0.54.5",
         "stylus-loader": "^2.1.2",
         "webpack": "^1.13.1"
+    },
+    "dependencies": {
+        "socket.io": "^2.3.0"
     }
 }
